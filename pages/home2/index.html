@@ -6,11 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- tailwindcss -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
   <link rel="stylesheet" href="/pages/home2/style.css">
   <link rel="stylesheet" href="/assests/style/nav.css">
   <!-- font-awesome -->
   <script src="https://kit.fontawesome.com/14d27916cf.js" crossorigin="anonymous"></script>
+  <!-- swiperjs -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <title>Document</title>
 </head>
 
@@ -27,41 +34,41 @@
           <div>
             <ul class="flex items-center gap-6">
               <li class="relative routeName"><a href="/"
-                  class="flex items-center gap-2 cursor-pointer parentHover"><span class="font-medium ">Home</span> <i
+                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span class="font-medium">Home</span> <i
                     class="fa-solid fa-caret-down"></i></a>
                 <ul class="bg-white px-5 py-4 w-[120px] absolute transition-all duration-300 routeNameChild">
-                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF4847]"><a
+                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF9515]"><a
                       href="/">Home-1</a></li>
                   <li
-                    class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium py-3 hover:text-[#FF4847]">
+                    class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium py-3 hover:text-[#FF9515]">
                     <a href="/pages/home2/index.html">Home-2</a>
                   </li>
-                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF4847]"><a
+                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF9515]"><a
                       href="/">Home-3</a></li>
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">About</a>
+              <li class="flex items-center gap-2 cursor-pointer"><a href="/pages/about/index.html" class="font-medium text-white hover:text-[#FF9515]">About</a>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
-                  class="font-medium">Services</a>
+              <li class="flex items-center gap-2 cursor-pointer"><a
+                  class="font-medium text-white hover:text-[#FF9515]">Services</a>
               </li>
 
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">Fetures</a>
+              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer"><a class="font-medium text-white hover:text-[#FF9515]">Fetures</a>
               </li>
               <li class="relative routeName"><a href="/"
-                  class="flex items-center gap-2 cursor-pointer parentHover "><span class="font-medium">Blog</span> <i
+                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span class="font-medium ">Blog</span> <i
                     class="fa-solid fa-caret-down"></i></a>
                 <ul class="bg-white px-5 py-4 w-[150px] absolute transition-all duration-300 routeNameChild">
-                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF4847]"><a
+                  <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF9515]"><a
                       href="/">Blog</a></li>
                   <li
-                    class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium py-3 hover:text-[#FF4847]">
+                    class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium py-3 hover:text-[#FF9515]">
                     <a href="#">Blog Details</a>
                   </li>
 
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">Contact</a>
+              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer text-white"><a class="font-medium">Contact</a>
               </li>
             </ul>
           </div>
@@ -82,14 +89,14 @@
       <!-- responsive section end -->
       <!-- log in section -->
       <div class="flex">
-        <button class="text-[14px] font-semibold tracking-[-0.05px] px-6 py-[6px] rounded-md">Log in</button>
+        <button class="text-[14px] text-white font-semibold tracking-[-0.05px] px-6 py-[6px] rounded-md">Log in</button>
         <button
           class="text-[14px] font-semibold tracking-[-0.05px] bg-[#0E0605] text-white px-6 py-[6px] rounded-md">Get
           stared</button>
       </div>
       <!-- sidebar section -->
       <div
-        class="absolute top-20 z-50 lg:hidden bg-[#ff4747] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
+        class="absolute top-20 z-50 lg:hidden bg-[#FF9515] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
         <ul class="text-white">
           <li class="font-medium flex items-center gap-2 homePage"><a href="#">Home</a> <i
               class="fa-solid fa-caret-down homeCaret"></i></li>
@@ -428,9 +435,9 @@
     <!-- story section end -->
 
     <!-- features section start -->
-    <section class="bg-[#E0F6F1] mt-[150px] mb-32 py-[68px] relative">
-      <div class="absolute md:left-[8%] md:top-24">
-        <img src="https://i.ibb.co/XDTQHDC/Element-9.png" alt="">
+    <section class="bg-[#E0F6F1] mt-[150px] mb-32 py-[68px] relative -z-20">
+      <div class="absolute md:left-[8%] md:top-24 -z-10">
+        <img class="" src="https://i.ibb.co/XDTQHDC/Element-9.png" alt="">
       </div>
       <div class="absolute md:right-[15%] md:top-40 top-40 right-0">
         <img src="https://i.ibb.co/DRHM0BH/Element-8.png" alt="">
@@ -502,8 +509,10 @@
         <div class="lg:w-[45%]">
           <div>
             <p class="text-[18px] text-secondary font-medium leading-7 uppercase mb-4">powerfull analytics</p>
-            <h2 class="!text-[60px] leading-[64px] mb-[30px]">Effortlessly to track all user <span class="text-secondary">analytics</span></h2>
-            <p class="text-[#808D9E] text-[18px] font-medium leading-7 border-b pb-6">Donec bibendum, dui id ultrices molestie, neque
+            <h2 class="!text-[60px] leading-[64px] mb-[30px]">Effortlessly to track all user <span
+                class="text-secondary">analytics</span></h2>
+            <p class="text-[#808D9E] text-[18px] font-medium leading-7 border-b pb-6">Donec bibendum, dui id ultrices
+              molestie, neque
               neque
               porta felis, id viverra ligula justo interdum mi.</p>
           </div>
@@ -527,14 +536,16 @@
         <div class="lg:w-[45%]">
           <div class="w-full relative">
             <img class="w-full" src="https://i.ibb.co/rxsvfnC/Img.png" alt="">
-            <div class="px-5 py-[15px] flex items-center gap-4 sm:w-[293px] w-[240px] analyticsCard rounded-[10px] bg-white absolute bottom-32 -left-16 z-10">
+            <div
+              class="px-5 py-[15px] flex items-center gap-4 sm:w-[293px] w-[240px] analyticsCard rounded-[10px] bg-white absolute bottom-32 -left-16 z-10">
               <div><img src="https://i.ibb.co/4wLqn0b/placeholder.png" alt=""></div>
               <div>
                 <p class="text-[13px] font-medium leading-4">Jessie Yates</p>
                 <p class="text-[10px] text-[#1D1E25] opacity-40 font-medium leading-4 mt-[6px]">Project Manager, USA</p>
               </div>
             </div>
-            <div class="px-5 py-[15px] flex items-center gap-4 sm:w-[293px] w-[240px] analyticsCard2 rounded-[10px] bg-white absolute bottom-10 -left-12">
+            <div
+              class="px-5 py-[15px] flex items-center gap-4 sm:w-[293px] w-[240px] analyticsCard2 rounded-[10px] bg-white absolute bottom-10 -left-12">
               <div><img src="https://i.ibb.co/3SdS9zQ/placeholder-1.png" alt=""></div>
               <div>
                 <p class="text-[13px] font-medium leading-4">Brain Foer</p>
@@ -561,17 +572,36 @@
         </div>
         <div class="lg:w-1/2">
           <p class="text-[18px] text-secondary font-medium leading-7 uppercase">Collaborate</p>
-          <h1 class="!text-[60px] mt-4 leading-[64px] tracking-[-0.03em]">Collaborate with your <span class="text-secondary">team</span> easily</h1>
-          <p class="text-[#808D9E] text-[18px] font-medium leading-7 mt-[30px]">Donec bibendum, dui id ultrices molestie, neque neque porta felis, id viverra ligula justo interdum mi.</p>
+          <h1 class="!text-[60px] mt-4 leading-[64px] tracking-[-0.03em]">Collaborate with your <span
+              class="text-secondary">team</span> easily</h1>
+          <p class="text-[#808D9E] text-[18px] font-medium leading-7 mt-[30px]">Donec bibendum, dui id ultrices
+            molestie, neque neque porta felis, id viverra ligula justo interdum mi.</p>
           <ul class="grid grid-cols-2 gap-y-3 mt-8">
-            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i class="fa-solid fa-circle-check"></i> <p>Organize your data</p></li>
-            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i class="fa-solid fa-circle-check"></i> <p>Always in sync</p></li>
-            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i class="fa-solid fa-circle-check"></i> <p>Work with any team</p></li>
-            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i class="fa-solid fa-circle-check"></i> <p>Embedded analytics</p></li>
-            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i class="fa-solid fa-circle-check"></i> <p>Business analytics</p></li>
+            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i
+                class="fa-solid fa-circle-check"></i>
+              <p>Organize your data</p>
+            </li>
+            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i
+                class="fa-solid fa-circle-check"></i>
+              <p>Always in sync</p>
+            </li>
+            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i
+                class="fa-solid fa-circle-check"></i>
+              <p>Work with any team</p>
+            </li>
+            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i
+                class="fa-solid fa-circle-check"></i>
+              <p>Embedded analytics</p>
+            </li>
+            <li class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3"><i
+                class="fa-solid fa-circle-check"></i>
+              <p>Business analytics</p>
+            </li>
           </ul>
           <div>
-            <button class="mt-11 leading-5 font-bold tracking-[-0.5px] border border-[#808D9E] px-6 py-[10px] rounded-[8px] transition-all duration-300 cursor-pointer hover:text-white hover:bg-[#FF9515] hover:border-[#FF9515]">Get started now</button>
+            <button
+              class="mt-11 leading-5 font-bold tracking-[-0.5px] border border-[#808D9E] px-6 py-[10px] rounded-[8px] transition-all duration-300 cursor-pointer hover:text-white hover:bg-[#FF9515] hover:border-[#FF9515]">Get
+              started now</button>
           </div>
         </div>
       </div>
@@ -579,12 +609,477 @@
     <!-- Collaborate section end -->
 
     <!-- business owners section start -->
-    <section>
-      
+    <section class="bg-[#2FC6A2] pb-[130px] pt-[130px]">
+      <div class="w-4/5 mx-auto">
+        <div class="flex 2xl:justify-between lg:gap-32 gap-10 items-center lg:flex-row flex-col-reverse mb-[88px]">
+          <div class="lg:w-[470px]">
+            <h3 class="text-white leading-[42px] tracking-[-0.02em]">“Connect to a multitude of sources like files and
+              feeds, popular business apps, cloud and onpremise databases, custom
+              apps and more”</h3>
+            <div class="flex items-center gap-5 border-t border-[#1D1E25] pt-[25px] mt-[25px]">
+              <div class="h-[55px] w-[60px] flex items-center justify-center bg-secondary">
+                <img src="https://i.ibb.co/WKhF40V/ri-double-quotes-l.png" alt="">
+              </div>
+              <div>
+                <h6 class="leading-6 tracking-[-0.05px] text-white">Jonah Jameson</h6>
+                <p class="font-medium leading-[26px] tracking-[-0.5px] text-white opacity-80 mt-[6px]">CEO of Youngtech
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="2xl:w-[570px] lg:w-[500px]">
+            <div class="relative">
+              <img class="h-[400px] object-cover rounded-[24px]" src="https://i.ibb.co/jGqP9dR/Image-Bg.png" alt="">
+
+              <label for="my-modal" class="">
+                <div
+                  class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] cursor-pointer flex items-center justify-center bg-white h-[54px] w-[54px] rounded-full">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </label>
+              <div class="absolute bottom-3 -left-12">
+                <img src="https://i.ibb.co/cyQyK7B/Element-12.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <input type="checkbox" id="my-modal" class="modal-toggle" />
+          <div class="modal">
+            <div class="relative xl:w-[800px] xl:h-[500px] md:w-[500px] md:h-[300px]">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/DZBGEVgL2eE" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <div class="absolute -top-6 -right-3">
+                <label for="my-modal"
+                  class="cursor-pointer bg-gray-200 py-2 px-[14px] rounded-full"><span>X</span></label>
+              </div>
+            </div>
+          </div>
+          <!-- modal -->
+        </div>
+        <p class="divider"><span class="font-medium leading-[26px] tracking-[-0.5px] text-white opacity-80">Trusted by
+            world class business owners</span></p>
+
+        <!-- trusted compay carousel start -->
+        <div class="border-b border-[#1D1E25] py-7 ">
+          <div class="swiper-container overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/DVYVbhm/Logo.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/5n9FXn7/Logo-1.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/DwPh6wG/Logo-2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/VNtsb3y/Logo-3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/09gRxFB/Logo-4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/5n9FXn7/Logo-1.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/DVYVbhm/Logo.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/09gRxFB/Logo-4.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/5n9FXn7/Logo-1.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide ">
+                <div>
+                  <img src="https://i.ibb.co/DVYVbhm/Logo.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- trusted compay carousel end -->
+            <div>
+
+            </div>
+
+          </div>
+        </div>
     </section>
     <!-- business owners section end -->
+
+    <!-- latest news section start -->
+    <section class="relative">
+      <div class="absolute bottom-40 -z-10">
+        <img src="https://i.ibb.co/tm0ZRQt/Frame-1000004857.png" alt="">
+      </div>
+      <div class="absolute sm:left-24 left-5 sm:top-20 top-24">
+        <img src="https://i.ibb.co/9ws8Cq5/Element-14.png" alt="">
+      </div>
+      <div class="absolute right-0 top-24">
+        <img src="https://i.ibb.co/D5t4CvM/Element-13.png" alt="">
+      </div>
+      <div class="w-4/5 mx-auto pt-[170px]">
+        <p class="uppercase text-[18px] text-secondary font-medium leading-7">latest news</p>
+        <div class="flex items-center justify-between flex-wrap gap-5 mt-3">
+          <h1 class="!text-[60px] !leading-[64px] tracking-[0.03em]">Our latest updates</h1>
+          <button
+            class="text-white bg-secondary font-medium leading-5 tracking-[-0.5px] px-6 py-[10px] rounded-[8px] ">View
+            all</button>
+        </div>
+        <div class="grid mt-14 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+          <div>
+            <div>
+              <img class="w-full" src="https://i.ibb.co/NrKYHwq/Img.png" alt="">
+            </div>
+            <div class="mt-8 border-b pb-5">
+              <div class="flex gap-3">
+                <p
+                  class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow">
+                  cloud</p>
+                <p
+                  class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow">
+                  app development</p>
+              </div>
+              <h5 class="leading-[30px] tracking-[-1px] mt-4">15+ Most Effective and Proven Time Management Techniques
+              </h5>
+            </div>
+            <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">October 27, 2021 | 4 min read</p>
+          </div>
+          <div>
+            <div>
+              <img class="w-full" src="https://i.ibb.co/gSvCs8h/Img-1.png" alt="">
+            </div>
+            <div class="mt-8 border-b pb-5">
+              <div class="flex gap-3">
+                <p
+                  class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow">
+                  server</p>
+              </div>
+              <h5 class="leading-[30px] tracking-[-1px] mt-4">15+ Most Effective and Proven Time Management Techniques
+              </h5>
+            </div>
+            <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">October 27, 2021 | 4 min read</p>
+          </div>
+          <div>
+            <div>
+              <img class="w-full" src="https://i.ibb.co/JkY4krn/Img-2.png" alt="">
+            </div>
+            <div class="mt-8 border-b pb-5">
+              <div class="flex gap-3">
+                <p
+                  class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow">
+                  business</p>
+              </div>
+              <h5 class="leading-[30px] tracking-[-1px] mt-4">15+ Most Effective and Proven Time Management Techniques
+              </h5>
+            </div>
+            <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">October 27, 2021 | 4 min read</p>
+          </div>
+        </div>
+        <div class="bg-[#E9ECF2] w-full h-[6px] rounded-full mt-[72px] mb-[70px]">
+          <div class="bg-[#1D1E25] h-[6px] rounded-full w-[37%]"></div>
+        </div>
+      </div>
+    </section>
+    <!-- latest news section end -->
+
+    <!-- pricing plan section start -->
+    <section class="mt-32 mb-32">
+      <div class="w-4/5 mx-auto">
+        <p class="text-[18px] text-secondary text-center font-medium leading-7">Pricing plan</p>
+        <h1 class="!text-[60px] leading-[64px] tracking-[-0.03em] text-center mt-4">Simple but effective</h1>
+        <div class="flex gap-8 justify-center mt-11">
+          <h6 class="leading-[26px] tracking-[-1px]">Pay Monthly</h6>
+          <div id="switchBtn" class="">
+            <div class="h-[24px] w-[24px] bg-white rounded-full cursor-pointer"></div>
+          </div>
+          <h6 class="leading-[26px] tracking-[-1px]">Pay Yearly</h6>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-[30px] mt-[100px]">
+          <div class="h-[512px] pricingCard border border-[#E9ECF2] rounded-[16px] px-8 py-[60px]">
+            <div class="flex justify-between">
+              <h3 class="text-[#2FC6A2] leading-[42px] tracking-[-0.02em]">Free</h3>
+              <p class="text-[18px] font-medium leading-7">Starter</p>
+            </div>
+            <p class="font-bold leading-5 tracking-[-1px] mt-1">/month</p>
+            <ul class="grid gap-3 mt-[46px]">
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online transactions</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>ATH withdrawals</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Easy control</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Location-based security</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online Banking</p>
+              </li>
+            </ul>
+            <button
+              class="font-medium leading-5 tracking-[-0.5px] mt-12 text-white px-7 py-3 rounded-[8px] bg-[#2FC6A2]">Choose
+              plan</button>
+          </div>
+          <div class="h-[512px] pricingCard border border-[#E9ECF2] rounded-[16px] px-8 py-[60px]">
+            <div class="flex justify-between">
+              <h3 class="text-[#2FC6A2] leading-[42px] tracking-[-0.02em]">$49</h3>
+              <p class="text-[18px] font-medium leading-7">Premium</p>
+            </div>
+            <p class="font-bold leading-5 tracking-[-1px] mt-1">/month</p>
+            <ul class="grid gap-3 mt-[46px]">
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online transactions</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>ATH withdrawals</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Easy control</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Location-based security</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online Banking</p>
+              </li>
+            </ul>
+            <button
+              class="font-medium leading-5 tracking-[-0.5px] mt-12 text-white px-7 py-3 rounded-[8px] bg-[#2FC6A2]">Choose
+              plan</button>
+          </div>
+          <div class="h-[512px] pricingCard border border-[#E9ECF2] rounded-[16px] px-8 py-[60px]">
+            <div class="flex justify-between">
+              <h3 class="text-[#2FC6A2] leading-[42px] tracking-[-0.02em]">$49</h3>
+              <p class="text-[18px] font-medium leading-7">Ultimate</p>
+            </div>
+            <p class="font-bold leading-5 tracking-[-1px] mt-1">/month</p>
+            <ul class="grid gap-3 mt-[46px]">
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online transactions</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>ATH withdrawals</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Easy control</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Location-based security</p>
+              </li>
+              <li class="text-[18px] font-medium leading-7 flex items-center gap-3"><i class="fa-solid fa-check"></i>
+                <p>Online Banking</p>
+              </li>
+            </ul>
+            <button
+              class="font-medium leading-5 tracking-[-0.5px] mt-12 text-white px-7 py-3 rounded-[8px] bg-[#2FC6A2]">Choose
+              plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing plan section end -->
+
+    <!-- get started saasco section start -->
+    <section class="bg-[#E0F6F1] relative pt-[250px] pb-[150px]">
+      <div class="absolute bottom-60 right-28">
+        <img src="https://i.ibb.co/MPSpj25/Element-18.png" alt="">
+      </div>
+      <div class="absolute bottom-28 md:left-28 left-20">
+        <img src="https://i.ibb.co/gvLvZfM/Element-17.png" alt="">
+      </div>
+      <div class="lg:left-[180px] lg:top-[220px] top-32 absolute">
+        <img src="https://i.ibb.co/Tb8rhTn/Avatar.png" alt="">
+      </div>
+      <div class="absolute lg:right-[180px] right-0 lg:top-[261px] top-40">
+        <img src="https://i.ibb.co/0y4YjSG/Avatar-1.png" alt="">
+      </div>
+      <div class="absolute lg:bottom-[120px] lg:right-[270px] right-6 bottom-44 ">
+        <img src="https://i.ibb.co/QfTHdD3/Avatar-2.png" alt="">
+      </div>
+      <div class="absolute lg:bottom-[120px] bottom-44 lg:left-[270px] left-10">
+        <img src="https://i.ibb.co/fqNXCyM/Avatar-3.png" alt="">
+      </div>
+      <div class="absolute left-1/2 top-[120px] translate-x-[-50%]">
+        <img src="https://i.ibb.co/gd6WS4R/Element-15.png" alt="">
+      </div>
+      <div class="w-4/5 mx-auto">
+        <div>
+          <h1 class="leading-[76px] tracking-[-0.04em] text-center">Get started with <br>
+            Saasco for 14 days</h1>
+          <p class="text-[18px] text-[#808D9E] font-medium text-center mt-[30px]">Optimize for user experience and
+            privacy. Use social <br> login integrations, lower user friction.</p>
+          <div class="flex !z-10 items-center gap-6 md:flex-row flex-col justify-center mt-12">
+            <button class="px-7 py-3 bg-[#1D1E25] text-white rounded-[8px]">Get started</button>
+            <div class="flex items-center gap-3">
+              <label for="my-modal">
+                <div
+                  class="bg-[#1d1e251a] h-[50px] w-[50px] rounded-full flex items-center justify-center cursor-pointer">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </label>
+              <p class="font-bold leading-5 tracking-[-1px]">Watch our platform!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- get started saasco section end -->
+
+    <!-- footer section start -->
+    <footer class="bg-[#2FC6A2] pt-[100px] pb-[80px] relative">
+      <div class="absolute right-20 -top-5">
+        <img src="https://i.ibb.co/Ss0j7QP/Element-16.png" alt="">
+      </div>
+      <div class="absolute left-8 top-14">
+        <img src="https://i.ibb.co/mb8r7Mq/Element.png" alt="">
+      </div>
+      <div class="absolute bottom-10">
+        <img src="https://i.ibb.co/gSRDXT3/Element-1.png" alt="">
+      </div>
+      <section class="w-4/5 mx-auto">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10">Product</p>
+            <ul>
+              <li class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50 ">Email Row</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Free
+                Tools</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Agents
+              </li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Blog
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10">Resources</p>
+            <ul>
+              <li class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50 ">Our Agents</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Member
+                Stories</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Video
+              </li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Free
+                trial</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10">Company</p>
+            <ul>
+              <li class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50 ">Patnerships</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Terms of
+                use</li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50 ">Privacy
+              </li>
+              <li class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50">Sitemap
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10">Get in touch</p>
+            <p class="font-medium leading-5 text-white opacity-50">You’ll find your next Marketing valu you prefer.</p>
+            <div class="flex items-center gap-3 mt-[62px]">
+              <div class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white">
+                <i class="fa-brands fa-facebook-f text-[#2FC6A2]"></i>
+              </div>
+              <div class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white">
+                <i class="fa-brands fa-twitter text-[#2FC6A2]"></i>
+              </div>
+              <div class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white">
+                <i class="fa-brands fa-linkedin-in text-[#2FC6A2]"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between flex-wrap mt-[80px]">
+          <div>
+            <p class="text-[30px] font-bold italic text-white">Sasrico<span class="text-red-400">.</span></p>
+          </div>
+          <div>
+            <p class="font-medium text-white opacity-50">Copyright 2020.com, All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer section end -->
   </main>
   <script src="/assests/script/nav.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      // Optional parameters
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      direction: "horizontal",
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 10,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        740: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 40
+        }
+      },
+
+    });
+
+    const switchBtn = document.querySelector('#switchBtn')
+    let isTrue = false;
+    switchBtn.addEventListener('click', () => {
+      // console.log(switchBtn.className='moon');
+      console.log(switchBtn);
+      if (isTrue) {
+        switchBtn.classList.remove('justify-end')
+        isTrue = false
+        console.log('remove');
+      } else {
+        switchBtn.classList.add("justify-end");
+        isTrue = true
+        console.log('add');
+      }
+    })
+
+  </script>
 </body>
 
 </html>

@@ -44,6 +44,7 @@ h6 {
 .text-primary {
   color: #2FC6A2 !important;
 }
+
 .text-secondary {
   color: #FF9515 !important;
 }
@@ -51,9 +52,11 @@ h6 {
 .bg-primary {
   background-color: #2FC6A2 !important;
 }
+
 .bg-secondary {
   background-color: #FF9515 !important;
 }
+
 .dashboardCard {
   box-shadow: 0px 0px 81.25px #EDEFF9;
 }
@@ -65,50 +68,94 @@ h6 {
 .storySection {
   margin-top: 1500px;
 }
-.analyticsCard{
+
+.analyticsCard {
   box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.15);
 }
-.analyticsCard2{
-box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.06);
+
+.analyticsCard2 {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.06);
+}
+.updatesShadow {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.15);
+}
+#switchBtn{
+display: flex;
+height: 32px;
+width: 66px;
+background-color: #1D1E25;
+align-items: center;
+padding:0 4px ;
+border-radius: 50px;
+}
+.divider:before,
+.divider:after {
+  background-color: #1D1E25;
+  height: 1px !important;
+}
+.pricingCard{
+  transition: all .3s;
+  cursor: pointer;
+}
+.pricingCard h3{
+  transition: all .3s;
+}
+.pricingCard:hover{
+  margin-top: -35px;
+  background-color: #2FC6A2;
+  color: #fff;
+}
+.pricingCard:hover h3{
+  color: #fff;
+}
+.pricingCard:hover button{
+  background-color: #fff;
+  color: #2FC6A2;
 }
 @media screen and (max-width:512px) {
   .storySection {
-    margin-top: 1400px;
+    margin-top: 1250px;
   }
 }
-@media (min-width:513px) and (max-width:522px){
+
+@media (min-width:513px) and (max-width:522px) {
   .storySection {
-      margin-top: 950px;
-    }
+    margin-top: 950px;
+  }
 }
-@media (min-width:523px) and (max-width:639px){
+
+@media (min-width:523px) and (max-width:639px) {
   .storySection {
-      margin-top: 930px;
-    }
+    margin-top: 930px;
+  }
 }
 
 @media (min-width: 640px) {
-.storySection {
-    margin-top: 670px;
+  .storySection {
+    margin-top: 770px;
   }
 }
+
 @media (min-width: 768px) {
-.storySection {
-    margin-top: 360px;
+  .storySection {
+    margin-top: 500px;
   }
 }
+
 @media (min-width: 1024px) {
-.storySection {
-    margin-top: 300px;
+  .storySection {
+    margin-top: 350px;
   }
 }
+
 @media (min-width: 1280px) {
-.storySection {
-    margin-top: 250px;
+  .storySection {
+    margin-top: 350px;
   }
 }
+
 @media (min-width: 1536px) {
-.storySection {
+  .storySection {
     margin-top: 0px;
   }
 }
