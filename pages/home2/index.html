@@ -28,14 +28,14 @@
         <div class="flex items-center gap-9">
           <!-- logo section -->
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <h6 class="italic text-white">Sasrico<span class="text-[#FF4847]">.</span></h6>
           </div>
           <!-- route section -->
           <div>
             <ul class="flex items-center gap-6">
               <li class="relative routeName"><a href="/"
-                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span class="font-medium">Home</span> <i
-                    class="fa-solid fa-caret-down"></i></a>
+                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span
+                    class="font-medium">Home</span> <i class="fa-solid fa-caret-down"></i></a>
                 <ul class="bg-white px-5 py-4 w-[120px] absolute transition-all duration-300 routeNameChild">
                   <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF9515]"><a
                       href="/">Home-1</a></li>
@@ -47,17 +47,19 @@
                       href="/pages/home3/index.html">Home-3</a></li>
                 </ul>
               </li>
-              <li class="flex items-center gap-2 cursor-pointer"><a href="/pages/about/index.html" class="font-medium text-white hover:text-[#FF9515]">About</a>
+              <li class="flex items-center gap-2 cursor-pointer"><a href="/pages/about/index.html"
+                  class="font-medium text-white hover:text-[#FF9515]">About</a>
               </li>
               <li class="flex items-center gap-2 cursor-pointer"><a
                   class="font-medium text-white hover:text-[#FF9515]">Services</a>
               </li>
 
-              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer"><a class="font-medium text-white hover:text-[#FF9515]">Fetures</a>
+              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer"><a
+                  class="font-medium text-white hover:text-[#FF9515]">Fetures</a>
               </li>
               <li class="relative routeName"><a href="/"
-                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span class="font-medium ">Blog</span> <i
-                    class="fa-solid fa-caret-down"></i></a>
+                  class="flex items-center gap-2 cursor-pointer hover:text-[#FF9515] text-white"><span
+                    class="font-medium ">Blog</span> <i class="fa-solid fa-caret-down"></i></a>
                 <ul class="bg-white px-5 py-4 w-[150px] absolute transition-all duration-300 routeNameChild">
                   <li class="hover:pl-2 transition-all duration-300 cursor-pointer font-medium hover:text-[#FF9515]"><a
                       href="/pages/blog/index.html">Blog</a></li>
@@ -68,7 +70,8 @@
 
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer text-white"><a class="font-medium">Contact</a>
+              <li class="flex items-center gap-2 hover:text-[#FF9515] cursor-pointer text-white"><a
+                  href="/pages/contact/index.html" class="font-medium">Contact</a>
               </li>
             </ul>
           </div>
@@ -82,7 +85,7 @@
             <i id="xMark" class="fa-solid fa-xmark hidden"></i>
           </div>
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <h6 class="italic text-white sm:block hidden">Sasrico<span class="text-[#FF4847]">.</span></h6>
           </div>
         </div>
       </div>
@@ -97,29 +100,36 @@
       <!-- sidebar section -->
       <div
         class="absolute top-20 z-50 lg:hidden bg-[#FF9515] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
-        <ul class="text-white">
+        <a class="" href="/">
+          <h6 class="italic">Sasrico<span class="text-[#fff]">.</span></h6>
+        </a>
+        <ul class="text-white mt-3">
           <li class="font-medium flex items-center gap-2 homePage"><a href="#">Home</a> <i
               class="fa-solid fa-caret-down homeCaret"></i></li>
           <div class="homeChild ml-3 mt-2">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Home-1</a>
-              <a class="font-medium hover:underline" href="">Home-2</a>
-              <a class="font-medium hover:underline" href="">Home-3</a>
+              <a class="font-medium hover:underline" href="/">Home-1</a>
+              <a class="font-medium hover:underline" href="./index.html">Home-2</a>
+              <a class="font-medium hover:underline" href="../home3/index.html">Home-3</a>
             </div>
           </div>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">About</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2"><a href="#">Services</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">Fetures</a></li>
-          <li class="font-medium flex items-center gap-2 blogPage"><a href="#">Blog</a> <i
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="../about/index.html">About</a>
+          </li>
+          <li class="font-medium flex hover:underline items-center gap-2"><a href="../services/index.html">Services</a>
+          </li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a
+              href="../fetures/index.html">Fetures</a></li>
+          <li class="font-medium flex items-center gap-2 blogPage"><a>Blog</a> <i
               class="fa-solid fa-caret-down blogCaret"></i>
           </li>
           <div class="blogChild ml-3 mt-2 hidden">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Blog</a>
-              <a class="font-medium hover:underline" href="">Blog Details</a>
+              <a class="font-medium hover:underline" href="../blog/index.html">Blog</a>
+              <a class="font-medium hover:underline" href="../blogdetails/index.html">Blog Details</a>
             </div>
           </div>
-          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a href="#">Contact</a></li>
+          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a
+              href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 

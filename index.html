@@ -32,7 +32,9 @@
         <div class="flex items-center gap-9">
           <!-- logo section -->
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <a href="/">
+              <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            </a>
           </div>
           <!-- route section -->
           <div>
@@ -51,13 +53,15 @@
                       href="/pages/home3/index.html">Home-3</a></li>
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a href="/pages/about/index.html" class="font-medium">About</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a href="/pages/about/index.html"
+                  class="font-medium">About</a>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
-                  class="font-medium" href="/pages/services/index.html">Services</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium"
+                  href="/pages/services/index.html">Services</a>
               </li>
 
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a href="/pages/fetures/index.html" class="font-medium">Fetures</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
+                  href="/pages/fetures/index.html" class="font-medium">Fetures</a>
               </li>
               <li class="relative routeName"><a href="/"
                   class="flex items-center gap-2 cursor-pointer parentHover "><span class="font-medium">Blog</span> <i
@@ -72,7 +76,8 @@
 
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">Contact</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
+                  href="/pages/contact/index.html" class="font-medium">Contact</a>
               </li>
             </ul>
           </div>
@@ -86,7 +91,9 @@
             <i id="xMark" class="fa-solid fa-xmark hidden"></i>
           </div>
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <a href="/">
+              <h6 class="italic sm:block hidden">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            </a>
           </div>
         </div>
       </div>
@@ -101,29 +108,36 @@
       <!-- sidebar section -->
       <div
         class="absolute top-20 z-50 lg:hidden bg-[#ff4747] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
-        <ul class="text-white">
+        <a class="" href="/">
+          <h6 class="italic">Sasrico<span class="text-[#fff]">.</span></h6>
+        </a>
+        <ul class="text-white mt-3">
           <li class="font-medium flex items-center gap-2 homePage"><a href="#">Home</a> <i
               class="fa-solid fa-caret-down homeCaret"></i></li>
           <div class="homeChild ml-3 mt-2">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Home-1</a>
-              <a class="font-medium hover:underline" href="">Home-2</a>
-              <a class="font-medium hover:underline" href="">Home-3</a>
+              <a class="font-medium hover:underline" href="/">Home-1</a>
+              <a class="font-medium hover:underline" href="./pages/home2/index.html">Home-2</a>
+              <a class="font-medium hover:underline" href="./pages/home3/index.html">Home-3</a>
             </div>
           </div>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">About</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2"><a href="#">Services</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">Fetures</a></li>
-          <li class="font-medium flex items-center gap-2 blogPage"><a href="#">Blog</a> <i
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a
+              href="./pages/about/index.html">About</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2"><a
+              href="./pages/services/index.html">Services</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a
+              href="../fetures/index.html">Fetures</a></li>
+          <li class="font-medium flex items-center gap-2 blogPage"><a>Blog</a> <i
               class="fa-solid fa-caret-down blogCaret"></i>
           </li>
           <div class="blogChild ml-3 mt-2 hidden">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Blog</a>
-              <a class="font-medium hover:underline" href="">Blog Details</a>
+              <a class="font-medium hover:underline" href="./pages/blog/index.html">Blog</a>
+              <a class="font-medium hover:underline" href="./pages/blogdetails/index.html">Blog Details</a>
             </div>
           </div>
-          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a href="#">Contact</a></li>
+          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a
+              href="./pages/contact/index.html">Contact</a></li>
         </ul>
       </div>
 
@@ -133,11 +147,11 @@
 
   <main>
     <!-- hero section start -->
-    <section class="relative pb-44 lg:mt-32 pt-3">
+    <section class="relative pb-44 mt-32 pt-3">
       <div class="absolute bottom-0 lg:block hidden left-[10%]">
         <img src="https://i.ibb.co/xSvkd5j/Line.png" alt="">
       </div>
-      <div class="w-4/5 mx-auto z-10 flex justify-between lg:flex-row flex-col gap-28">
+      <div class="w-4/5 mx-auto z-10 flex justify-between lg:flex-row flex-col-reverse gap-28">
         <div class="lg:w-[45%] w-full">
           <div class="leading-[64px] lg:block hidden tracking-[-0.04em]">
             <h1><span class="text-primary">Sasrico</span> makes it</h1>
@@ -173,7 +187,7 @@
             </ul>
           </div>
         </div>
-        <div class="lg:w-[45%] w-full relative">
+        <div class="lg:w-[45%] w-full relative mb-12">
           <div class="z-20">
             <img class="absolute top-8 -left-6" src="https://i.ibb.co/T1JLvnY/Element.png" alt="">
             <img class="" src="https://i.ibb.co/cYtn7kq/Ellipse.png" alt="">
@@ -192,7 +206,7 @@
               </div>
             </div>
             <div
-              class="line-chartCard sm:rotate-[-15deg] rotate-[-30deg] absolute md:-top-12 md:left-80 sm:-top-28 sm:left-60 left-32 -top-20 p-5">
+              class="line-chartCard sm:rotate-[-15deg] rotate-[-30deg] absolute md:-top-12 md:left-80 sm:-top-28 sm:left-60 left-32 -top-20 p-5 md:block  hidden">
               <div><img src="https://i.ibb.co/FHyrgSK/Line-Chart.png" alt=""></div>
               <div>
                 <div class="flex items-center gap-2">
@@ -279,7 +293,7 @@
     <!-- partners section end -->
 
     <!-- fetures section start -->
-    <section class="w-4/5 mx-auto mt-32 relative">
+    <section class="w-4/5 mx-auto md:mt-32 mt-24 relative">
       <div class="absolute -left-8 sm:block hidden">
         <img src="https://i.ibb.co/02KmH4L/Element-2.png" alt="">
       </div>

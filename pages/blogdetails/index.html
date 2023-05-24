@@ -23,7 +23,7 @@
         <div class="flex items-center gap-9">
           <!-- logo section -->
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <h6 class="italic sm:block hidden">Sasrico<span class="text-[#FF4847]">.</span></h6>
           </div>
           <!-- route section -->
           <div>
@@ -64,7 +64,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">Contact</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a href="/pages/contact/index.html" class="font-medium">Contact</a>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@
             <i id="xMark" class="fa-solid fa-xmark hidden"></i>
           </div>
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <h6 class="italic sm:block hidden">Sasrico<span class="text-[#FF4847]">.</span></h6>
           </div>
         </div>
       </div>
@@ -93,29 +93,30 @@
       <!-- sidebar section -->
       <div
         class="absolute top-20 z-50 lg:hidden bg-[#ff4747] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
-        <ul class="text-white">
+        <a class="" href="/"><h6 class="italic">Sasrico<span class="text-[#fff]">.</span></h6></a>
+        <ul class="text-white mt-3">
           <li class="font-medium flex items-center gap-2 homePage"><a href="#">Home</a> <i
               class="fa-solid fa-caret-down homeCaret"></i></li>
           <div class="homeChild ml-3 mt-2">
             <div class="grid gap-2">
               <a class="font-medium hover:underline" href="">Home-1</a>
-              <a class="font-medium hover:underline" href="">Home-2</a>
-              <a class="font-medium hover:underline" href="">Home-3</a>
+              <a class="font-medium hover:underline" href="../home2/index.html">Home-2</a>
+              <a class="font-medium hover:underline" href="../home3/index.html">Home-3</a>
             </div>
           </div>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">About</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2"><a href="#">Services</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">Fetures</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="../about/index.html">About</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2"><a href="../services/index.html">Services</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="../fetures/index.html">Fetures</a></li>
           <li class="font-medium flex items-center gap-2 blogPage"><a href="#">Blog</a> <i
               class="fa-solid fa-caret-down blogCaret"></i>
           </li>
           <div class="blogChild ml-3 mt-2 hidden">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Blog</a>
-              <a class="font-medium hover:underline" href="">Blog Details</a>
+              <a class="font-medium hover:underline" href="../blog/index.html">Blog</a>
+              <a class="font-medium hover:underline" href="../blogdetails/index.html">Blog Details</a>
             </div>
           </div>
-          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a href="#">Contact</a></li>
+          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 
@@ -123,9 +124,9 @@
   </header>
   <!-- navbar section end -->
   <main>
-    <section class="w-[65%] mx-auto mb-32">
+    <section class="sm:w-[65%] w-4/5 mx-auto mb-32 sm:mt-[100px] mt-[40px]">
       <div class="flex items-center gap-3 relative">
-        <div class="absolute -right-24 top-2">
+        <div class="absolute sm:-right-24 right-0 top-2 sm:block hidden">
           <img src="https://i.ibb.co/Tkr2PXz/Element.png" alt="">
         </div>
         <p class="detailsCardShadow z-10">
@@ -138,7 +139,7 @@
           Techniques</h1>
       </div>
       <div>
-        <div class="flex items-center justify-between mt-6">
+        <div class="flex items-center justify-between flex-wrap gap-4 mt-6">
           <p class="font-medium leading-[26px] tracking-[-0.5px]">October 27, 2021 | 4 min read</p>
           <div class="text-[20px] flex items-center gap-6">
             <i class="fa-brands fa-twitter"></i>
@@ -148,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-[80px] border-b">
+      <div class="mt-[80px] border-b pb-[48px]">
         <div class="w-full">
           <img class="w-full" src="https://i.ibb.co/p4Nnsmp/Img.png" alt="">
         </div>
@@ -172,7 +173,8 @@
               of Lorem Ipsum available, but the majority have suffered alteration in some form,
               by injected humour”</p>
           </div>
-          <p class="text-[20px] font-medium leading-[38px]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+          <p class="text-[20px] font-medium leading-[38px]">Contrary to popular belief, Lorem Ipsum is not simply random
+            text. It has roots in a piece of classical
             Latin literature
             from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
             in Virginia,
@@ -185,6 +187,17 @@
             on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
             dolor sit
             amet..", comes from a line in section 1.10.32.</p>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-6 mt-10">
+          <p class="text-[18px] font-medium leading-[28px]">Share:</p>
+          <div class="text-[20px] flex items-center gap-6">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
         </div>
       </div>
     </section>

@@ -44,11 +44,12 @@
               </li>
               <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">About</a>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
-                  class="font-medium" href="/pages/services/index.html">Services</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium"
+                  href="/pages/services/index.html">Services</a>
               </li>
 
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a href="/pages/fetures/index.html" class="font-medium">Fetures</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
+                  href="/pages/fetures/index.html" class="font-medium">Fetures</a>
               </li>
               <li class="relative routeName"><a href="/"
                   class="flex items-center gap-2 cursor-pointer parentHover "><span class="font-medium">Blog</span> <i
@@ -63,7 +64,8 @@
 
                 </ul>
               </li>
-              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a class="font-medium">Contact</a>
+              <li class="flex items-center gap-2 hover:text-[#FF4847] cursor-pointer"><a
+                  href="/pages/contact/index.html" class="font-medium">Contact</a>
               </li>
             </ul>
           </div>
@@ -77,7 +79,7 @@
             <i id="xMark" class="fa-solid fa-xmark hidden"></i>
           </div>
           <div>
-            <h6 class="italic">Sasrico<span class="text-[#FF4847]">.</span></h6>
+            <h6 class="italic sm:block hidden">Sasrico<span class="text-[#FF4847]">.</span></h6>
           </div>
         </div>
       </div>
@@ -92,29 +94,36 @@
       <!-- sidebar section -->
       <div
         class="absolute top-20 z-50 lg:hidden bg-[#ff4747] w-48 pl-6 transition-all duration-500 sidebarNav py-5 h-[80vh]">
-        <ul class="text-white">
+        <a class="" href="/">
+          <h6 class="italic">Sasrico<span class="text-[#fff]">.</span></h6>
+        </a>
+        <ul class="text-white mt-3">
           <li class="font-medium flex items-center gap-2 homePage"><a href="#">Home</a> <i
               class="fa-solid fa-caret-down homeCaret"></i></li>
           <div class="homeChild ml-3 mt-2">
             <div class="grid gap-2">
               <a class="font-medium hover:underline" href="">Home-1</a>
-              <a class="font-medium hover:underline" href="">Home-2</a>
-              <a class="font-medium hover:underline" href="">Home-3</a>
+              <a class="font-medium hover:underline" href="../home2/index.html">Home-2</a>
+              <a class="font-medium hover:underline" href="../home3/index.html">Home-3</a>
             </div>
           </div>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">About</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2"><a href="#">Services</a></li>
-          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="#">Fetures</a></li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a href="../about/index.html">About</a>
+          </li>
+          <li class="font-medium flex hover:underline items-center gap-2"><a href="../services/index.html">Services</a>
+          </li>
+          <li class="font-medium flex hover:underline items-center gap-2 my-2"><a
+              href="../fetures/index.html">Fetures</a></li>
           <li class="font-medium flex items-center gap-2 blogPage"><a href="#">Blog</a> <i
               class="fa-solid fa-caret-down blogCaret"></i>
           </li>
           <div class="blogChild ml-3 mt-2 hidden">
             <div class="grid gap-2">
-              <a class="font-medium hover:underline" href="">Blog</a>
-              <a class="font-medium hover:underline" href="">Blog Details</a>
+              <a class="font-medium hover:underline" href="../blog/index.html">Blog</a>
+              <a class="font-medium hover:underline" href="../blogdetails/index.html">Blog Details</a>
             </div>
           </div>
-          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a href="#">Contact</a></li>
+          <li class="font-medium flex items-center hover:underline gap-2 mt-2"><a
+              href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
 
@@ -245,9 +254,9 @@
         <h1 class="leading-[64px] tracking-[-0.03em] !text-[60px]">New post</h1>
       </div>
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[56px] mt-[64px]">
-        <div class="flex gap-[30px]">
+        <div class="flex md:flex-row flex-col gap-[30px]">
           <div class="">
-            <img class="!min-w-[170px] h-[140px]" src="https://i.ibb.co/syLdXf4/Img-9.png" alt="">
+            <img class="md:!min-w-[170px] md:h-[140px] w-full" src="https://i.ibb.co/syLdXf4/Img-9.png" alt="">
           </div>
           <div class="">
             <div class="flex gap-3">
@@ -264,9 +273,9 @@
             <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">October 27, 2021 | 4 min read</p>
           </div>
         </div>
-        <div class="flex gap-[30px]">
+        <div class="flex md:flex-row flex-col gap-[30px]">
           <div class="">
-            <img class="!min-w-[170px] h-[140px]" src="https://i.ibb.co/8BgvpxM/Img-10.png" alt="">
+            <img class="md:!min-w-[170px] md:h-[140px] w-full" src="https://i.ibb.co/8BgvpxM/Img-10.png" alt="">
           </div>
           <div class="">
             <div class="flex gap-3">
@@ -283,9 +292,9 @@
             <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">October 27, 2021 | 4 min read</p>
           </div>
         </div>
-        <div class="flex gap-[30px]">
+        <div class="flex md:flex-row flex-col gap-[30px]">
           <div class="">
-            <img class="!min-w-[170px] h-[140px]" src="https://i.ibb.co/cXcV6TS/Img-11.png" alt="">
+            <img class="md:!min-w-[170px] md:h-[140px] w-full" src="https://i.ibb.co/cXcV6TS/Img-11.png" alt="">
           </div>
           <div class="">
             <div class="flex gap-3">
@@ -302,9 +311,9 @@
             <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">October 27, 2021 | 4 min read</p>
           </div>
         </div>
-        <div class="flex gap-[30px]">
+        <div class="flex md:flex-row flex-col gap-[30px]">
           <div class="">
-            <img class="!min-w-[170px] h-[140px]" src="https://i.ibb.co/DpYTMx5/Img-12.png" alt="">
+            <img class="md:!min-w-[170px] md:h-[140px] w-full" src="https://i.ibb.co/DpYTMx5/Img-12.png" alt="">
           </div>
           <div class="">
             <div class="flex gap-3">
